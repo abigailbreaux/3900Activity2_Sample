@@ -1,176 +1,120 @@
-
 /*************************************
-This css file includes several different formatting examples
 GENERAL
 **************************************/
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f8ff; /* light blue background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
 a {
- text-decoration: none;
+  text-decoration: none;
   color: #0d50cd;
- }
+}
+
+a:hover {
+  color: #003366;
+}
 
 img {
-max-width: 100%;
-
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
-
- body {
-   font-family: 'Open Sans', sans-serif;
- }
-
-
- #wrapper {
-   max-width: 940px;
-   margin: 0 auto;
-   padding: 0 5%;
-
- }
-
- h3 {
-     margin: 0 0 1em 0;
- }
-
 
 /*************************************
-HEADING
+LAYOUT
 **************************************/
-
-header {
-  float: left;
-  margin: 0 0 20px 0;
-  padding: 2px 0 0 0;
-  width: 100%;
-
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
-.center {
- text-align: center
+/*************************************
+HEADINGS
+**************************************/
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 20px 0;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: center;
+  color: #101884;
 }
 
-
-#logo {
-   text-align: center;
-   margin: 0;
-
- }
-
- h1  {
- font-family: 'Changa One', sans-serif;
- margin: 10px 0;
- font-size: 1.75em;
- font-weight: normal;
- line-height: 0.5;
- text-align: center;
-
-   color: #101884;
-
- }
-
- h2  {
- font-size: 1.00em;
- font-weight: normal;
- margin: -5px 0 0;
-   color: #df330a;
- }
-
-
-h3  {
-    font-size: 1.1em;
-    font-weight: 700;
-    margin: 15px 0 0;
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #df330a;
 }
 
+h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 15px 0;
+  color: #333;
+}
 
 /*************************************
 NAVIGATION
 **************************************/
- nav {
-	text-align: center;
-	padding: 10px 0;
-	margin: 20px 0 0;
-  }
+nav {
+  text-align: center;
+  background: #005f73;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
 
-  nav ul  {
-    list-style: none;
-	margin: 0 10px;
-	padding: 0;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
   display: inline-block;
+  margin: 0 15px;
+}
 
+nav a {
+  color: #fff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffdd57;
 }
 
 /*************************************
 FOOTER
 **************************************/
- .footer {
- font-size: 0.75em;
- text-align: center;
- clear: both;
- padding-top: 50px;
- color: #ccc;
- }
+footer {
+  font-size: 0.85em;
+  text-align: center;
+  padding: 20px 0;
+  background: #005f73;
+  color: #fff;
+  margin-top: 40px;
+}
 
 /*************************************
-PAGE:
-**************************************/
-.mydiv {background: lightblue; width:250px; height: 250px;}
-
-.myimage {
-    float:left;
-    width:150px;
-    height:175px;
-    margin:20px;
-    border-radius: 20px;
-}
-
-.dog-photo {
-    display: block;
-    max-width: 250px;
-    margin: 0 auto 30px;
-    border-radius: 5px;
-}
-
-
-
- /*************************************
-PAGE: ABOUT
+IMAGES
 **************************************/
 .profile-photo {
-    display: block;
-    max-width: 400px;
-    margin: 0 auto 30px;
-    border-radius: 5px;
+  display: block;
+  max-width: 500px;
+  margin: 20px auto;
 }
 
-/*************************************
-COLORS
-**************************************/
-
-
- /* green header*/
-  header {
-   background: #6ab47b;
-   border-color: #599a68;
- }
-
-
-
-/* nav background on mobile devices*/
-nav {
-   background: #599a6b;
-}
-
-nav a, nav a:visited {
-	color: #fff;
-}
-
-/* selected nav link color*/
-nav a.selected, nav a:hover {
-  color: #32673f;
-}
-/* site body*/
-body {
-    background-color: #fff;
-    color: #000;
+.lighthouse-photo {
+  display: block;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 10px;
 }
